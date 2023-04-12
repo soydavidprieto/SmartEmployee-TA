@@ -1,0 +1,15 @@
+C:\project\SmartEmployee-TA\EaFramework\bin\Debug\net7.0\selenium-manager\linux\selenium-manager
+C:\project\SmartEmployee-TA\EaFramework\bin\Debug\net7.0\selenium-manager\macos\selenium-manager
+C:\project\SmartEmployee-TA\EaFramework\bin\Debug\net7.0\selenium-manager\windows\selenium-manager.exe
+C:\project\SmartEmployee-TA\EaFramework\bin\Debug\net7.0\EaFramework.deps.json
+C:\project\SmartEmployee-TA\EaFramework\bin\Debug\net7.0\EaFramework.dll
+C:\project\SmartEmployee-TA\EaFramework\bin\Debug\net7.0\EaFramework.pdb
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.csproj.AssemblyReference.cache
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.AssemblyInfoInputs.cache
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.AssemblyInfo.cs
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.csproj.CoreCompileInputs.cache
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.dll
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\refint\EaFramework.dll
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.pdb
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\ref\EaFramework.dll
