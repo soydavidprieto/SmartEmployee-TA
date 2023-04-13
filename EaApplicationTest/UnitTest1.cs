@@ -4,10 +4,10 @@ using OpenQA.Selenium;
 
 namespace EaApplicationTest
 {
-    public class UnitTest1
+    public class UnitTest1 : IDisposable
     {
-        [Fact]
-        public void Test1()
+        private readonly IDriverFixture _driverFixture;
+        public UnitTest1()
         {
             var testSettings = new TestSettings()
             {
@@ -16,12 +16,19 @@ namespace EaApplicationTest
                 TimeOutInverval = 30
             };
 
-            var driver = new DriverFixture(testSettings);
+            _driverFixture = new DriverFixture(testSettings);
+        }
 
-            driver.Driver.FindElement(By.Id("exampleInputEmail")).SendKeys("soydavidprieto@gmail.com");
-            driver.Driver.FindElement(By.Id("exampleInputPassword")).SendKeys("123456");
-            driver.Driver.FindElement(By.Id("btnLogin")).Click();
-
+        [Fact]
+        public void Test1()
+        {
+            _driverFixture.Driver.FindElement(By.Id("exampleInputEmail")).SendKeys("soydavidprieto@gmail.com");
+            _driverFixture.Driver.FindElement(By.Id("exampleInputPassword")).SendKeys("123456");
+            _driverFixture.Driver.FindElement(By.Id("btnLogin")).Click();
+        }
+        public void Dispose()
+        {
+            _driverFixture.Driver.Quit();
         }
     }
 }

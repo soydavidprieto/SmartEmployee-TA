@@ -7,7 +7,7 @@ using OpenQA.Selenium.Safari;
 
 namespace EaFramework.Driver
 {
-    public class DriverFixture
+    public class DriverFixture : IDriverFixture, IDisposable
     {
         private readonly TestSettings testSettings;
         private TestSettings _testSettings;
@@ -31,6 +31,11 @@ namespace EaFramework.Driver
                 _ => new ChromeDriver()
 
             };
+        }
+
+        public void Dispose()
+        {
+            Driver.Quit();
         }
     }
 
