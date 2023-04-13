@@ -1,37 +1,36 @@
-﻿using OpenQA.Selenium;
+﻿using EaFramework.Config;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Safari;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EaFramework.Driver
 {
     public class DriverFixture
     {
+        private readonly TestSettings testSettings;
+        private TestSettings _testSettings;
+
         public IWebDriver Driver { get; }
 
-        public DriverFixture(BrowserType browserType)
+        public DriverFixture(TestSettings testSettings)
         {
-            Driver = GetWebDriver(browserType);
-            Driver.Navigate().GoToUrl("https://localhost:44322/");
+            _testSettings = testSettings;
+            Driver = GetWebDriver();
+            Driver.Navigate().GoToUrl(_testSettings.ApplicationUrl);
         }
 
-        private IWebDriver GetWebDriver(BrowserType browserType)
+        private IWebDriver GetWebDriver()
         {
-            return browserType switch
+            return _testSettings.BrowserType switch
             {
                 BrowserType.Chrome => new ChromeDriver(),
                 BrowserType.Safari => new SafariDriver(),
                 BrowserType.Firefox => new FirefoxDriver(),
                 _ => new ChromeDriver()
 
-            } ;
-             
+            };
         }
     }
 

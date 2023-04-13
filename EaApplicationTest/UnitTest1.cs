@@ -1,7 +1,6 @@
+using EaFramework.Config;
+using EaFramework.Driver;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Edge;
-using OpenQA.Selenium.Firefox;
 
 namespace EaApplicationTest
 {
@@ -10,12 +9,18 @@ namespace EaApplicationTest
         [Fact]
         public void Test1()
         {
-            var driver = new EdgeDriver();
-            driver.Navigate().GoToUrl("https://localhost:44322/");
+            var testSettings = new TestSettings()
+            {
+                BrowserType = BrowserType.Chrome,
+                ApplicationUrl = new Uri("https://localhost:44322/"),
+                TimeOutInverval = 30
+            };
 
-            driver.FindElement(By.Id("exampleInputEmail")).SendKeys("soydavidprieto@gmail.com");
-            driver.FindElement(By.Id("exampleInputPassword")).SendKeys("123456");
-            driver.FindElement(By.Id("btnLogin")).Click();
+            var driver = new DriverFixture(testSettings);
+
+            driver.Driver.FindElement(By.Id("exampleInputEmail")).SendKeys("soydavidprieto@gmail.com");
+            driver.Driver.FindElement(By.Id("exampleInputPassword")).SendKeys("123456");
+            driver.Driver.FindElement(By.Id("btnLogin")).Click();
 
         }
     }
