@@ -105,3 +105,6 @@ C:\project\SmartEmployee-TA\EaApplicationTest\obj\Debug\net7.0\refint\EaApplicat
 C:\project\SmartEmployee-TA\EaApplicationTest\obj\Debug\net7.0\EaApplicationTest.pdb
 C:\project\SmartEmployee-TA\EaApplicationTest\obj\Debug\net7.0\EaApplicationTest.genruntimeconfig.cache
 C:\project\SmartEmployee-TA\EaApplicationTest\obj\Debug\net7.0\ref\EaApplicationTest.dll
+C:\project\SmartEmployee-TA\EaApplicationTest\bin\Debug\net7.0\AutoFixture.dll
+C:\project\SmartEmployee-TA\EaApplicationTest\bin\Debug\net7.0\AutoFixture.Xunit2.dll
+C:\project\SmartEmployee-TA\EaApplicationTest\bin\Debug\net7.0\Fare.dll

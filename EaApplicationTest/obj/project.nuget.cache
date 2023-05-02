@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+bYnzPxWyWbJKrfZkctFYTBKVNUn4S7UR5n30XoLEiHYfPm8WHKodCFLYKuIPOKcWdP124jJo1Cmq2z7sKHezg==",
+  "dgSpecHash": "IKzlmxwMhuYwknEh6QXaJ3wQUZXcCkCwW9rhUhr28UgvN0bLJkQwfghzvYCXrhOhEuTfXkvwdhphRTGuMUzOUg==",
   "success": true,
   "projectFilePath": "C:\\project\\SmartEmployee-TA\\EaApplicationTest\\EaApplicationTest.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dprie\\.nuget\\packages\\autofixture\\4.18.0\\autofixture.4.18.0.nupkg.sha512",
+    "C:\\Users\\dprie\\.nuget\\packages\\autofixture.xunit2\\4.18.0\\autofixture.xunit2.4.18.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\dprie\\.nuget\\packages\\fare\\2.1.1\\fare.2.1.1.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\microsoft.net.test.sdk\\17.3.2\\microsoft.net.test.sdk.17.3.2.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -37,6 +40,8 @@
     "C:\\Users\\dprie\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
+    "C:\\Users\\dprie\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\dprie\\.nuget\\packages\\system.componentmodel.annotations\\4.3.0\\system.componentmodel.annotations.4.3.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.3.0\\system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",

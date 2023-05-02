@@ -1,10 +1,8 @@
-using EaFramework.Config;
-using EaFramework.Driver;
-using OpenQA.Selenium;
-
+using AutoFixture.Xunit2;
+using EaApplicationTest.Models;
 namespace EaApplicationTest
 {
-    public class UnitTest1 : IDisposable
+    public class UnitTest1 : Global, IDisposable
     {
         private readonly IDriverFixture _driverFixture;
         public UnitTest1()
@@ -17,18 +15,27 @@ namespace EaApplicationTest
             };
 
             _driverFixture = new DriverFixture(testSettings);
+            
         }
 
         [Fact]
         public void Test1()
         {
-            _driverFixture.Driver.FindElement(By.Id("exampleInputEmail")).SendKeys("soydavidprieto@gmail.com");
-            _driverFixture.Driver.FindElement(By.Id("exampleInputPassword")).SendKeys("123456");
-            _driverFixture.Driver.FindElement(By.Id("btnLogin")).Click();
+            var loginPage = new LoginPage(_driverFixture);
+            var homePage = new HomePage(_driverFixture);
+            var afpPage = new AfpPage(_driverFixture);
+
+            loginPage.Login(emailAdmin, passwordAdmin);
+            homePage.clickSocialSecurity();
+            afpPage.ClickAft();
+           // afpPage.ClickCreate();
+            //afpPage.CreateAfp("Colmedica", "187346136-0");
+            afpPage.PerformClickOnSpecialValue("Colmedica", "Edit");
         }
+
         public void Dispose()
         {
-            _driverFixture.Driver.Quit();
+            //_driverFixture.Driver.Quit();
         }
     }
 }

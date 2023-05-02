@@ -1,1 +1,12 @@
 global using Xunit;
+global using EaApplicationTest.Pages;
+global using EaApplicationTest.Pages.SocialSecurity;
+global using EaFramework.Config;
+global using EaFramework.Driver;
+global using OpenQA.Selenium;
+global using EaFramework;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
