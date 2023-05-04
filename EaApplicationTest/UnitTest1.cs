@@ -18,24 +18,30 @@ namespace EaApplicationTest
             
         }
 
-        [Theory]
-        [InlineData("Skandia", "3453456-1")]
-        [InlineData("Segurps Alfa", "7895934-1")]
-        [InlineData("Seguros Falabbela", "3845973")]
+        [Fact]
+        //[InlineData("Skandia", "3453456-1")]
+        //[InlineData("Segurps Alfa", "7895934-1")]
+        //[InlineData("Seguros Falabbela", "3845973")]
 
         [AutoData]
-        public void Test1(string name, string nit)
+        public void Test1()
         {
             var loginPage = new LoginPage(_driverFixture);
             var homePage = new HomePage(_driverFixture);
             var afpPage = new AfpPage(_driverFixture);
 
+            Afp afp = new Afp()
+            {
+                afpName = "Afp1",
+                afpNit = "94785-1"
+            };
+
             loginPage.Login(emailAdmin, passwordAdmin);
             homePage.clickSocialSecurity();
             afpPage.ClickAft();
             afpPage.ClickCreate();
-            afpPage.CreateAfp(name, nit);
-           // afpPage.PerformClickOnSpecialValue("Colmedica", "Edit");
+            afpPage.CreateAfp(afp);
+            afpPage.PerformClickOnSpecialValue(afp.afpName, "Edit");
         }
 
         public void Dispose()

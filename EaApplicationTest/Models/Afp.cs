@@ -9,13 +9,19 @@ using Xunit.Sdk;
 
 namespace EaApplicationTest.Models
 {
-    internal class Afp
+    public class Afp
     {
-        public int Id { get; set; }
+        [Key]
+        public int afpId { get; set; }
 
-        
-        public string? Name { get; set; }
+        [Required]
+        [Display(Name = "Name of AFP")]
+        [MaxLength(100, ErrorMessage = "The {0} field can not have more than {1} characters.")]
+        public string? afpName { get; set; }
 
-        public string? Nit { get; set; }
+        [Required]
+        [Display(Name = "Nit of AFP")]
+        [MaxLength(20, ErrorMessage = "The {0} field can not have more than {1} characters.")]
+        public string? afpNit { get; set; }
     }
 }

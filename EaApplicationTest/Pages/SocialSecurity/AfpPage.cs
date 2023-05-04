@@ -21,10 +21,10 @@ namespace EaApplicationTest.Pages.SocialSecurity
         public void ClickAft() => lnkAfp.Click();
         public void ClickCreate() => lnkCreateAfp.Click();
 
-    public void CreateAfp(string Name, string Nit)
+    public void CreateAfp(Afp afp)
         {
-            inputNameAfp.SendKeys(Name);
-            inputNitAfp.SendKeys(Nit);
+            inputNameAfp.SendKeys(afp.afpName);
+            inputNitAfp.SendKeys(afp.afpNit);
             bntCreate.Click();
 
         }
