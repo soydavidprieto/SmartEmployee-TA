@@ -9,8 +9,7 @@ namespace EaFramework.Driver
 {
     public class DriverFixture : IDriverFixture, IDisposable
     {
-        private readonly TestSettings testSettings;
-        private TestSettings _testSettings;
+        private readonly TestSettings _testSettings;
 
         public IWebDriver Driver { get; }
 
@@ -21,15 +20,15 @@ namespace EaFramework.Driver
             Driver.Navigate().GoToUrl(_testSettings.ApplicationUrl);
         }
 
+
         private IWebDriver GetWebDriver()
         {
             return _testSettings.BrowserType switch
             {
                 BrowserType.Chrome => new ChromeDriver(),
-                BrowserType.Safari => new SafariDriver(),
                 BrowserType.Firefox => new FirefoxDriver(),
+                BrowserType.Safari => new SafariDriver(),
                 _ => new ChromeDriver()
-
             };
         }
 
@@ -39,11 +38,12 @@ namespace EaFramework.Driver
         }
     }
 
+
     public enum BrowserType
     {
         Chrome,
-        Safari,
         Firefox,
-        EdgeChromiun
+        Safari,
+        EdgeChromium
     }
 }

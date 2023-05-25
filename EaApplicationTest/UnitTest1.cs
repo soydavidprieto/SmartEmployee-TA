@@ -7,15 +7,16 @@ namespace EaApplicationTest
         private readonly IDriverFixture _driverFixture;
         public UnitTest1()
         {
-            var testSettings = new TestSettings()
-            {
-                BrowserType = BrowserType.Chrome,
-                ApplicationUrl = new Uri("https://localhost:44322/"),
-                TimeOutInverval = 30
-            };
+            //var testSettings = new TestSettings()
+            //{
+            //    BrowserType = BrowserType.Chrome,
+            //    ApplicationUrl = new Uri("https://localhost:44322/"),
+            //    TimeOutInverval = 30
+            //};
+
+            var testSettings = ConfigReader.ReadConfig();
 
             _driverFixture = new DriverFixture(testSettings);
-            
         }
 
         //[Fact]

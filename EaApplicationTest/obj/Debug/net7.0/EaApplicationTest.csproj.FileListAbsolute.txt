@@ -108,3 +108,4 @@ C:\project\SmartEmployee-TA\EaApplicationTest\obj\Debug\net7.0\ref\EaApplication
 C:\project\SmartEmployee-TA\EaApplicationTest\bin\Debug\net7.0\AutoFixture.dll
 C:\project\SmartEmployee-TA\EaApplicationTest\bin\Debug\net7.0\AutoFixture.Xunit2.dll
 C:\project\SmartEmployee-TA\EaApplicationTest\bin\Debug\net7.0\Fare.dll
+C:\project\SmartEmployee-TA\EaApplicationTest\bin\Debug\net7.0\appsettings.json
