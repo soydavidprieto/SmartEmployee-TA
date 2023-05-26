@@ -10,14 +10,14 @@ namespace EaApplicationTest.Pages
 {
     public class LoginPage
     {
-        private readonly IDriverFixture _driverFixture;
-        public LoginPage(IDriverFixture driverFixture)
+        private readonly IDriverWait _driver;
+        public LoginPage(IDriverWait driver)
         {
-            _driverFixture = driverFixture;
+            _driver = driver;
         }
-        private IWebElement inputEmail => _driverFixture.Driver.FindElement(By.Id("exampleInputEmail"));
-        private IWebElement inputPassword => _driverFixture.Driver.FindElement(By.Id("exampleInputPassword"));
-        private IWebElement btnLogin => _driverFixture.Driver.FindElement(By.Id("btnLogin"));
+        private IWebElement inputEmail => _driver.FindElement(By.Id("exampleInputEmail"));
+        private IWebElement inputPassword => _driver.FindElement(By.Id("exampleInputPassword"));
+        private IWebElement btnLogin => _driver.FindElement(By.Id("btnLogin"));
 
         public void Login(string Email, string Password)
         {

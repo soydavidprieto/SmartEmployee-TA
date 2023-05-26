@@ -6,17 +6,17 @@ namespace EaApplicationTest.Pages.SocialSecurity
 {
     public class AfpPage
     {
-        private readonly IDriverFixture _driverFixture;
-        public AfpPage (IDriverFixture driverFixture)
+        private readonly IDriverWait _driver;
+        public AfpPage (IDriverWait driver)
         {
-            _driverFixture = driverFixture;
+            _driver = driver;
         }
-        private IWebElement lnkAfp => _driverFixture.Driver.FindElement(By.XPath("/html/body/div[1]/ul/li[2]/div/div/a[1]"));
-        private IWebElement lnkCreateAfp => _driverFixture.Driver.FindElement(By.Id("lnkCreateAfp"));
-        private IWebElement inputNameAfp => _driverFixture.Driver.FindElement(By.Id("inputNameAfp"));
-        private IWebElement inputNitAfp => _driverFixture.Driver.FindElement(By.Id("inputNitAfp"));
-        private IWebElement bntCreate => _driverFixture.Driver.FindElement(By.Id("bntCreate"));
-        private IWebElement tbAfp => _driverFixture.Driver.FindElement(By.Id("afpTable"));
+        private IWebElement lnkAfp => _driver.FindElement(By.XPath("/html/body/div[1]/ul/li[2]/div/div/a[1]"));
+        private IWebElement lnkCreateAfp => _driver.FindElement(By.Id("lnkCreateAfp"));
+        private IWebElement inputNameAfp => _driver.FindElement(By.Id("inputNameAfp"));
+        private IWebElement inputNitAfp => _driver.FindElement(By.Id("inputNitAfp"));
+        private IWebElement bntCreate => _driver.FindElement(By.Id("bntCreate"));
+        private IWebElement tbAfp => _driver.FindElement(By.Id("afpTable"));
 
         public void ClickAft() => lnkAfp.Click();
         public void ClickCreate() => lnkCreateAfp.Click();

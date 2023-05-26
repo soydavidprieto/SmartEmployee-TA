@@ -5,6 +5,7 @@ namespace EaApplicationTest
     public class UnitTest1 : Global, IDisposable
     {
         private readonly IDriverFixture _driverFixture;
+        private IDriverWait _driverWait;
         public UnitTest1()
         {
             //var testSettings = new TestSettings()
@@ -17,6 +18,8 @@ namespace EaApplicationTest
             var testSettings = ConfigReader.ReadConfig();
 
             _driverFixture = new DriverFixture(testSettings);
+            _driverWait = new DriverWait(_driverFixture, testSettings);
+
         }
 
         //[Fact]
@@ -27,9 +30,9 @@ namespace EaApplicationTest
         [AutoData]
         public void Test1(Afp afp)
         {
-            var loginPage = new LoginPage(_driverFixture);
-            var homePage = new HomePage(_driverFixture);
-            var afpPage = new AfpPage(_driverFixture);
+            var loginPage = new LoginPage(_driverWait);
+            var homePage = new HomePage(_driverWait);
+            var afpPage = new AfpPage(_driverWait);
 
             //Afp afp = new Afp()
             //{
@@ -47,7 +50,7 @@ namespace EaApplicationTest
 
         public void Dispose()
         {
-            //_driverFixture.Driver.Quit();
+            _driverFixture.Driver.Quit();
         }
     }
 }
