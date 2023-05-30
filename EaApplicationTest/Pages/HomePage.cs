@@ -1,10 +1,16 @@
 ﻿namespace EaApplicationTest.Pages
 {
-    public class HomePage
+    public interface IHomePage
+    {
+        void clickEmployee();
+        void clickSocialSecurity();
+    }
+
+    public class HomePage : IHomePage
     {
         private readonly IDriverWait _driver;
 
-        public  HomePage(IDriverWait driver)
+        public HomePage(IDriverWait driver)
         {
             _driver = driver;
         }
@@ -14,8 +20,8 @@
         private IWebElement lnkSocialSecurity => _driver.FindElement(By.Id("lnkSocialSecurity"));
         private IWebElement lnkAdministration => _driver.FindElement(By.Id("lnkAdministration"));
 
-        public void clickEmployee() => lnkEmployee.Click(); 
-        public void clickSocialSecurity () => lnkSocialSecurity.Click();
+        public void clickEmployee() => lnkEmployee.Click();
+        public void clickSocialSecurity() => lnkSocialSecurity.Click();
 
-}
+    }
 }

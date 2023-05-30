@@ -8,7 +8,12 @@ using System.Threading.Tasks;
 
 namespace EaApplicationTest.Pages
 {
-    public class LoginPage
+    public interface ILoginPage
+    {
+        void Login(string Email, string Password);
+    }
+
+    public class LoginPage : ILoginPage
     {
         private readonly IDriverWait _driver;
         public LoginPage(IDriverWait driver)

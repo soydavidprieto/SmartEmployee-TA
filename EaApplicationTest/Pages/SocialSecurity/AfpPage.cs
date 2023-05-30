@@ -4,10 +4,18 @@ using EaFramework.Extensions;
 
 namespace EaApplicationTest.Pages.SocialSecurity
 {
-    public class AfpPage
+    public interface IAfpPage
+    {
+        void ClickAfp();
+        void ClickCreate();
+        void CreateAfp(Afp afp);
+        void PerformClickOnSpecialValue(string name, string operation);
+    }
+
+    public class AfpPage : IAfpPage
     {
         private readonly IDriverWait _driver;
-        public AfpPage (IDriverWait driver)
+        public AfpPage(IDriverWait driver)
         {
             _driver = driver;
         }
@@ -18,10 +26,10 @@ namespace EaApplicationTest.Pages.SocialSecurity
         private IWebElement bntCreate => _driver.FindElement(By.Id("bntCreate"));
         private IWebElement tbAfp => _driver.FindElement(By.Id("afpTable"));
 
-        public void ClickAft() => lnkAfp.Click();
+        public void ClickAfp() => lnkAfp.Click();
         public void ClickCreate() => lnkCreateAfp.Click();
 
-    public void CreateAfp(Afp afp)
+        public void CreateAfp(Afp afp)
         {
             inputNameAfp.SendKeys(afp.afpName);
             inputNitAfp.SendKeys(afp.afpNit);
