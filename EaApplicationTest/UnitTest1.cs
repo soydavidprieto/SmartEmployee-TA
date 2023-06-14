@@ -4,8 +4,7 @@ namespace EaApplicationTest
 {
     public class UnitTest1 : Global
     {
-        
-        private readonly IDriverWait _driverWait;
+
         private readonly ILoginPage _loginPage;
         private readonly IHomePage _homePage;
         private readonly IAfpPage _afpPage;
@@ -14,7 +13,6 @@ namespace EaApplicationTest
                          IHomePage homePage,
                          IAfpPage afpPage)
         {
-            
             _loginPage = loginPage;
             _homePage = homePage;
             _afpPage = afpPage;
@@ -22,7 +20,7 @@ namespace EaApplicationTest
 
         [Theory]
         [AutoData]
-        public void Create_afp_test(Afp afp)
+        public void Test1(Afp afp)
         {
 
             _loginPage.Login(emailAdmin, passwordAdmin);
@@ -30,8 +28,7 @@ namespace EaApplicationTest
             _afpPage.ClickAfp();
             _afpPage.ClickCreate();
             _afpPage.CreateAfp(afp);
+            //_afpPage.PerformClickOnSpecialValue(afp.afpName, "EditAfp");
         }
-
-       
     }
 }

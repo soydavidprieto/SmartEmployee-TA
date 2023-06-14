@@ -1,0 +1,30 @@
+﻿using EaFramework.Driver;
+using OpenQA.Selenium;
+
+namespace EaSpectFlowTests.Pages
+{
+    public interface IHomePage
+    {
+        void clickEmployee();
+        void clickSocialSecurity();
+    }
+
+    public class HomePage : IHomePage
+    {
+        private readonly IDriverWait _driver;
+
+        public HomePage(IDriverWait driver)
+        {
+            _driver = driver;
+        }
+
+        private IWebElement lnkHome => _driver.FindElement(By.Id("lnkHome"));
+        private IWebElement lnkEmployee => _driver.FindElement(By.Id("lnkEmployee"));
+        private IWebElement lnkSocialSecurity => _driver.FindElement(By.XPath("/html/body/div[1]/ul/li[2]/a"));
+        private IWebElement lnkAdministration => _driver.FindElement(By.Id("lnkAdministration"));
+
+        public void clickEmployee() => lnkEmployee.Click();
+        public void clickSocialSecurity() => lnkSocialSecurity.Click();
+
+    }
+}

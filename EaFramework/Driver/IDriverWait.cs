@@ -1,10 +1,9 @@
 ﻿using OpenQA.Selenium;
 
-namespace EaFramework.Driver
+namespace EaFramework.Driver;
+
+public interface IDriverWait
 {
-    public interface IDriverWait
-    {
-        IWebElement FindElement(By elementLocator);
-        IEnumerable<IWebElement> FindElements(By elementLocator);
-    }
+    IWebElement FindElement(By elementLocator);
+    IEnumerable<IWebElement> FindElements(By elementLocator);
 }

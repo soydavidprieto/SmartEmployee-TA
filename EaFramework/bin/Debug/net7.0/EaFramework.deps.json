@@ -8,9 +8,12 @@
     ".NETCoreApp,Version=v7.0": {
       "EaFramework/1.0.0": {
         "dependencies": {
-          "Selenium.Support": "4.8.2",
-          "Selenium.WebDriver": "4.8.2",
-          "Xunit.DependencyInjection": "8.7.1"
+          "Selenium.Support": "4.10.0",
+          "Selenium.WebDriver": "4.10.0",
+          "Xunit.DependencyInjection": "8.7.1",
+          "xunit": "2.4.2",
+          "xunit.extensibility.core": "2.4.2",
+          "xunit.extensibility.execution": "2.4.2"
         },
         "runtime": {
           "EaFramework.dll": {}
@@ -475,9 +478,9 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
-      "Selenium.Support/4.8.2": {
+      "Selenium.Support/4.10.0": {
         "dependencies": {
-          "Selenium.WebDriver": "4.8.2"
+          "Selenium.WebDriver": "4.10.0"
         },
         "runtime": {
           "lib/net6.0/WebDriver.Support.dll": {
@@ -486,7 +489,7 @@
           }
         }
       },
-      "Selenium.WebDriver/4.8.2": {
+      "Selenium.WebDriver/4.10.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
@@ -1088,12 +1091,37 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "xunit/2.4.2": {
+        "dependencies": {
+          "xunit.analyzers": "1.0.0",
+          "xunit.assert": "2.4.2",
+          "xunit.core": "2.4.2"
+        }
+      },
       "xunit.abstractions/2.0.3": {
         "runtime": {
           "lib/netstandard2.0/xunit.abstractions.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
           }
+        }
+      },
+      "xunit.analyzers/1.0.0": {},
+      "xunit.assert/2.4.2": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.assert.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.0"
+          }
+        }
+      },
+      "xunit.core/2.4.2": {
+        "dependencies": {
+          "xunit.extensibility.core": "2.4.2",
+          "xunit.extensibility.execution": "2.4.2"
         }
       },
       "Xunit.DependencyInjection/8.7.1": {
@@ -1471,19 +1499,19 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
-    "Selenium.Support/4.8.2": {
+    "Selenium.Support/4.10.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tS51BJC22gQBSW2VYFAxJ7GwPQguzel41bnQyXkgoShAUO5P48lxQ83EBZe8isISjMKCDsHWOv95aUNVQaEFGA==",
-      "path": "selenium.support/4.8.2",
-      "hashPath": "selenium.support.4.8.2.nupkg.sha512"
+      "sha512": "sha512-S/7nH+SMiCaut5C6kmMVxq4mCcmvwboPvPqdpx2/Dfwi2O9bFQb+psJC4ZcpvPMg7FCnrC1i6uZW6rthjSo1TQ==",
+      "path": "selenium.support/4.10.0",
+      "hashPath": "selenium.support.4.10.0.nupkg.sha512"
     },
-    "Selenium.WebDriver/4.8.2": {
+    "Selenium.WebDriver/4.10.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gNCaZrR32U2e9pyS+HXSqNHdcrIbqulOkcmycFoDL/tM5la4tELaZ3FpPRbq7tjJK3cKs5lLqVVFM9PfY1WW5g==",
-      "path": "selenium.webdriver/4.8.2",
-      "hashPath": "selenium.webdriver.4.8.2.nupkg.sha512"
+      "sha512": "sha512-MvgUaxeLqLOtRnNS+kHzqfOhLO+7ZEukhQMuS7ksQQPA2tGNXWhrRN3PTkTGuKhuodd9JkoZ4eCKVEQF6xPdmA==",
+      "path": "selenium.webdriver/4.10.0",
+      "hashPath": "selenium.webdriver.4.10.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
@@ -1884,12 +1912,40 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
+    "xunit/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6Mj73Ont3zj2CJuoykVJfE0ZmRwn7C+pTuRP8c4bnaaTFjwNG6tGe0prJ1yIbMe9AHrpDys63ctWacSsFJWK/w==",
+      "path": "xunit/2.4.2",
+      "hashPath": "xunit.2.4.2.nupkg.sha512"
+    },
     "xunit.abstractions/2.0.3": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
       "path": "xunit.abstractions/2.0.3",
       "hashPath": "xunit.abstractions.2.0.3.nupkg.sha512"
+    },
+    "xunit.analyzers/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BeO8hEgs/c8Ls2647fPfieMngncvf0D0xYNDfIO59MolxtCtVjFRd6SRc+7tj8VMqkVOuJcnc9eh4ngI2cAmLQ==",
+      "path": "xunit.analyzers/1.0.0",
+      "hashPath": "xunit.analyzers.1.0.0.nupkg.sha512"
+    },
+    "xunit.assert/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pxJISOFjn2XTTi1mcDCkRZrTFb9OtRRCtx2kZFNF51GdReLr1ls2rnyxvAS4JO247K3aNtflvh5Q0346K5BROA==",
+      "path": "xunit.assert/2.4.2",
+      "hashPath": "xunit.assert.2.4.2.nupkg.sha512"
+    },
+    "xunit.core/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KB4yGCxNqIVyekhJLXtKSEq6BaXVp/JO3mbGVE1hxypZTLEe7h+sTbAhpA+yZW2dPtXTuiW+C1B2oxxHEkrmOw==",
+      "path": "xunit.core/2.4.2",
+      "hashPath": "xunit.core.2.4.2.nupkg.sha512"
     },
     "Xunit.DependencyInjection/8.7.1": {
       "type": "package",

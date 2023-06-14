@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b5fdff3e_002Da46c_002D4703_002Da91b_002De2215e91c8e5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Create Afp" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7FF76FF0-1989-4991-8361-30FF567226E0::net7.0::EaSpectFlowTest.Features.CreateAfpFeature.CreateAfp&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::DC3638D2-6E0A-4B8D-9BBF-D2C2ED819A6E::net7.0::EaApplicationTest.UnitTest1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::42276BAA-F35B-4673-BEDE-2389DF24EBFC::net7.0::EaSpectFlowTests.Features.AfpCreateFeature&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	</wpf:ResourceDictionary>

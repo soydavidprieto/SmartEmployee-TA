@@ -775,10 +775,10 @@
           }
         }
       },
-      "Selenium.Support/4.8.2": {
+      "Selenium.Support/4.10.0": {
         "type": "package",
         "dependencies": {
-          "Selenium.WebDriver": "4.8.2"
+          "Selenium.WebDriver": "4.10.0"
         },
         "compile": {
           "lib/net6.0/WebDriver.Support.dll": {}
@@ -787,7 +787,7 @@
           "lib/net6.0/WebDriver.Support.dll": {}
         }
       },
-      "Selenium.WebDriver/4.8.2": {
+      "Selenium.WebDriver/4.10.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -1919,6 +1919,14 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "xunit/2.4.2": {
+        "type": "package",
+        "dependencies": {
+          "xunit.analyzers": "1.0.0",
+          "xunit.assert": "2.4.2",
+          "xunit.core": "[2.4.2]"
+        }
+      },
       "xunit.abstractions/2.0.3": {
         "type": "package",
         "compile": {
@@ -1930,6 +1938,40 @@
           "lib/netstandard2.0/xunit.abstractions.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "xunit.analyzers/1.0.0": {
+        "type": "package"
+      },
+      "xunit.assert/2.4.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.assert.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.assert.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "xunit.core/2.4.2": {
+        "type": "package",
+        "dependencies": {
+          "xunit.extensibility.core": "[2.4.2]",
+          "xunit.extensibility.execution": "[2.4.2]"
+        },
+        "build": {
+          "build/xunit.core.props": {},
+          "build/xunit.core.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/xunit.core.props": {},
+          "buildMultiTargeting/xunit.core.targets": {}
         }
       },
       "Xunit.DependencyInjection/8.7.1": {
@@ -2913,10 +2955,10 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "Selenium.Support/4.8.2": {
-      "sha512": "tS51BJC22gQBSW2VYFAxJ7GwPQguzel41bnQyXkgoShAUO5P48lxQ83EBZe8isISjMKCDsHWOv95aUNVQaEFGA==",
+    "Selenium.Support/4.10.0": {
+      "sha512": "S/7nH+SMiCaut5C6kmMVxq4mCcmvwboPvPqdpx2/Dfwi2O9bFQb+psJC4ZcpvPMg7FCnrC1i6uZW6rthjSo1TQ==",
       "type": "package",
-      "path": "selenium.support/4.8.2",
+      "path": "selenium.support/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2929,14 +2971,14 @@
         "lib/net6.0/WebDriver.Support.dll",
         "lib/netstandard2.0/WebDriver.Support.dll",
         "lib/netstandard2.1/WebDriver.Support.dll",
-        "selenium.support.4.8.2.nupkg.sha512",
+        "selenium.support.4.10.0.nupkg.sha512",
         "selenium.support.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.8.2": {
-      "sha512": "gNCaZrR32U2e9pyS+HXSqNHdcrIbqulOkcmycFoDL/tM5la4tELaZ3FpPRbq7tjJK3cKs5lLqVVFM9PfY1WW5g==",
+    "Selenium.WebDriver/4.10.0": {
+      "sha512": "MvgUaxeLqLOtRnNS+kHzqfOhLO+7ZEukhQMuS7ksQQPA2tGNXWhrRN3PTkTGuKhuodd9JkoZ4eCKVEQF6xPdmA==",
       "type": "package",
-      "path": "selenium.webdriver/4.8.2",
+      "path": "selenium.webdriver/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2954,7 +2996,7 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.8.2.nupkg.sha512",
+        "selenium.webdriver.4.10.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
@@ -6063,6 +6105,18 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "xunit/2.4.2": {
+      "sha512": "6Mj73Ont3zj2CJuoykVJfE0ZmRwn7C+pTuRP8c4bnaaTFjwNG6tGe0prJ1yIbMe9AHrpDys63ctWacSsFJWK/w==",
+      "type": "package",
+      "path": "xunit/2.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/logo-128-transparent.png",
+        "xunit.2.4.2.nupkg.sha512",
+        "xunit.nuspec"
+      ]
+    },
     "xunit.abstractions/2.0.3": {
       "sha512": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
       "type": "package",
@@ -6078,6 +6132,53 @@
         "lib/netstandard2.0/xunit.abstractions.xml",
         "xunit.abstractions.2.0.3.nupkg.sha512",
         "xunit.abstractions.nuspec"
+      ]
+    },
+    "xunit.analyzers/1.0.0": {
+      "sha512": "BeO8hEgs/c8Ls2647fPfieMngncvf0D0xYNDfIO59MolxtCtVjFRd6SRc+7tj8VMqkVOuJcnc9eh4ngI2cAmLQ==",
+      "type": "package",
+      "path": "xunit.analyzers/1.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/logo-128-transparent.png",
+        "analyzers/dotnet/cs/xunit.analyzers.dll",
+        "analyzers/dotnet/cs/xunit.analyzers.fixes.dll",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "xunit.analyzers.1.0.0.nupkg.sha512",
+        "xunit.analyzers.nuspec"
+      ]
+    },
+    "xunit.assert/2.4.2": {
+      "sha512": "pxJISOFjn2XTTi1mcDCkRZrTFb9OtRRCtx2kZFNF51GdReLr1ls2rnyxvAS4JO247K3aNtflvh5Q0346K5BROA==",
+      "type": "package",
+      "path": "xunit.assert/2.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/logo-128-transparent.png",
+        "lib/netstandard1.1/xunit.assert.dll",
+        "lib/netstandard1.1/xunit.assert.xml",
+        "xunit.assert.2.4.2.nupkg.sha512",
+        "xunit.assert.nuspec"
+      ]
+    },
+    "xunit.core/2.4.2": {
+      "sha512": "KB4yGCxNqIVyekhJLXtKSEq6BaXVp/JO3mbGVE1hxypZTLEe7h+sTbAhpA+yZW2dPtXTuiW+C1B2oxxHEkrmOw==",
+      "type": "package",
+      "path": "xunit.core/2.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/logo-128-transparent.png",
+        "build/xunit.core.props",
+        "build/xunit.core.targets",
+        "buildMultiTargeting/xunit.core.props",
+        "buildMultiTargeting/xunit.core.targets",
+        "xunit.core.2.4.2.nupkg.sha512",
+        "xunit.core.nuspec"
       ]
     },
     "Xunit.DependencyInjection/8.7.1": {
@@ -6144,9 +6245,12 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Selenium.Support >= 4.8.2",
-      "Selenium.WebDriver >= 4.8.2",
-      "Xunit.DependencyInjection >= 8.7.1"
+      "Selenium.Support >= 4.10.0",
+      "Selenium.WebDriver >= 4.10.0",
+      "Xunit.DependencyInjection >= 8.7.1",
+      "xunit >= 2.4.2",
+      "xunit.extensibility.core >= 2.4.2",
+      "xunit.extensibility.execution >= 2.4.2"
     ]
   },
   "packageFolders": {
@@ -6190,15 +6294,27 @@
         "dependencies": {
           "Selenium.Support": {
             "target": "Package",
-            "version": "[4.8.2, )"
+            "version": "[4.10.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.8.2, )"
+            "version": "[4.10.0, )"
           },
           "Xunit.DependencyInjection": {
             "target": "Package",
             "version": "[8.7.1, )"
+          },
+          "xunit": {
+            "target": "Package",
+            "version": "[2.4.2, )"
+          },
+          "xunit.extensibility.core": {
+            "target": "Package",
+            "version": "[2.4.2, )"
+          },
+          "xunit.extensibility.execution": {
+            "target": "Package",
+            "version": "[2.4.2, )"
           }
         },
         "imports": [

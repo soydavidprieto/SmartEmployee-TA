@@ -1127,10 +1127,10 @@
           }
         }
       },
-      "Selenium.Support/4.8.2": {
+      "Selenium.Support/4.10.0": {
         "type": "package",
         "dependencies": {
-          "Selenium.WebDriver": "4.8.2"
+          "Selenium.WebDriver": "4.10.0"
         },
         "compile": {
           "lib/net6.0/WebDriver.Support.dll": {}
@@ -1139,7 +1139,7 @@
           "lib/net6.0/WebDriver.Support.dll": {}
         }
       },
-      "Selenium.WebDriver/4.8.2": {
+      "Selenium.WebDriver/4.10.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -2452,9 +2452,12 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Selenium.Support": "4.8.2",
-          "Selenium.WebDriver": "4.8.2",
-          "Xunit.DependencyInjection": "8.7.1"
+          "Selenium.Support": "4.10.0",
+          "Selenium.WebDriver": "4.10.0",
+          "Xunit.DependencyInjection": "8.7.1",
+          "xunit": "2.4.2",
+          "xunit.extensibility.core": "2.4.2",
+          "xunit.extensibility.execution": "2.4.2"
         },
         "compile": {
           "bin/placeholder/EaFramework.dll": {}
@@ -4069,10 +4072,10 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "Selenium.Support/4.8.2": {
-      "sha512": "tS51BJC22gQBSW2VYFAxJ7GwPQguzel41bnQyXkgoShAUO5P48lxQ83EBZe8isISjMKCDsHWOv95aUNVQaEFGA==",
+    "Selenium.Support/4.10.0": {
+      "sha512": "S/7nH+SMiCaut5C6kmMVxq4mCcmvwboPvPqdpx2/Dfwi2O9bFQb+psJC4ZcpvPMg7FCnrC1i6uZW6rthjSo1TQ==",
       "type": "package",
-      "path": "selenium.support/4.8.2",
+      "path": "selenium.support/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4085,14 +4088,14 @@
         "lib/net6.0/WebDriver.Support.dll",
         "lib/netstandard2.0/WebDriver.Support.dll",
         "lib/netstandard2.1/WebDriver.Support.dll",
-        "selenium.support.4.8.2.nupkg.sha512",
+        "selenium.support.4.10.0.nupkg.sha512",
         "selenium.support.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.8.2": {
-      "sha512": "gNCaZrR32U2e9pyS+HXSqNHdcrIbqulOkcmycFoDL/tM5la4tELaZ3FpPRbq7tjJK3cKs5lLqVVFM9PfY1WW5g==",
+    "Selenium.WebDriver/4.10.0": {
+      "sha512": "MvgUaxeLqLOtRnNS+kHzqfOhLO+7ZEukhQMuS7ksQQPA2tGNXWhrRN3PTkTGuKhuodd9JkoZ4eCKVEQF6xPdmA==",
       "type": "package",
-      "path": "selenium.webdriver/4.8.2",
+      "path": "selenium.webdriver/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4110,7 +4113,7 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.8.2.nupkg.sha512",
+        "selenium.webdriver.4.10.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },

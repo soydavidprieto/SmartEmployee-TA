@@ -17,7 +17,7 @@
 
         private IWebElement lnkHome => _driver.FindElement(By.Id("lnkHome"));
         private IWebElement lnkEmployee => _driver.FindElement(By.Id("lnkEmployee"));
-        private IWebElement lnkSocialSecurity => _driver.FindElement(By.Id("lnkSocialSecurity"));
+        private IWebElement lnkSocialSecurity => _driver.FindElement(By.XPath("/html/body/div[1]/ul/li[2]/a"));
         private IWebElement lnkAdministration => _driver.FindElement(By.Id("lnkAdministration"));
 
         public void clickEmployee() => lnkEmployee.Click();

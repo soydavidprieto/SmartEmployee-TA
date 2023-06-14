@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "x05m3Q4mmDiDxGdjVdekmmfxTurDG8uvMW6laalfQRtO4kRxxc6feON/FZIy91elPmGv0oVx0VzGkch30ZALog==",
+  "dgSpecHash": "O0uwaU6nEoAUTCiOx/UBJYygY6GvbAX7TgjkkqlHb0BTtMptFKJvLpE/TKmUzpz+RO1AvfB5zpaWH4WBEG5iiA==",
   "success": true,
   "projectFilePath": "C:\\project\\SmartEmployee-TA\\EaApplicationTest\\EaApplicationTest.csproj",
   "expectedPackageFiles": [
@@ -60,8 +60,8 @@
     "C:\\Users\\dprie\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\dprie\\.nuget\\packages\\selenium.support\\4.8.2\\selenium.support.4.8.2.nupkg.sha512",
-    "C:\\Users\\dprie\\.nuget\\packages\\selenium.webdriver\\4.8.2\\selenium.webdriver.4.8.2.nupkg.sha512",
+    "C:\\Users\\dprie\\.nuget\\packages\\selenium.support\\4.10.0\\selenium.support.4.10.0.nupkg.sha512",
+    "C:\\Users\\dprie\\.nuget\\packages\\selenium.webdriver\\4.10.0\\selenium.webdriver.4.10.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\dprie\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

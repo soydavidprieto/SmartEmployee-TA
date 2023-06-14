@@ -131,15 +131,27 @@
           "dependencies": {
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.8.2, )"
+              "version": "[4.10.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.8.2, )"
+              "version": "[4.10.0, )"
             },
             "Xunit.DependencyInjection": {
               "target": "Package",
               "version": "[8.7.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.4.2, )"
             }
           },
           "imports": [

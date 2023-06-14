@@ -12,7 +12,11 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\dprie\.nuget\packages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xunit.core\2.4.2\build\xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core\2.4.2\build\xunit.core.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgXunit_DependencyInjection Condition=" '$(PkgXunit_DependencyInjection)' == '' ">C:\Users\dprie\.nuget\packages\xunit.dependencyinjection\8.7.1</PkgXunit_DependencyInjection>
+    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\dprie\.nuget\packages\xunit.analyzers\1.0.0</Pkgxunit_analyzers>
   </PropertyGroup>
 </Project>

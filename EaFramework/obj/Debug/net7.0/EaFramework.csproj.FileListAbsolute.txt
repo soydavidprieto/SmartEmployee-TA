@@ -13,3 +13,5 @@ C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.dll
 C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\refint\EaFramework.dll
 C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.pdb
 C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\ref\EaFramework.dll
+C:\project\SmartEmployee-TA\EaFramework\bin\Debug\net7.0\EaFramework.runtimeconfig.json
+C:\project\SmartEmployee-TA\EaFramework\obj\Debug\net7.0\EaFramework.genruntimeconfig.cache
