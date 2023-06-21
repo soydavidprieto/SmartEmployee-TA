@@ -14,6 +14,7 @@ namespace EaSpectFlowTests.Pages.SocialSecurity
         void CreateAfpManual(string Name, string Nit);
         string GetAfpName();
         void PerformClickOnSpecialValue(string name, string operation);
+        //public void FindRecord(string nameValue);
     }
 
     public class AfpPage : IAfpPage
@@ -49,9 +50,14 @@ namespace EaSpectFlowTests.Pages.SocialSecurity
 
         }
 
+        //public void FindRecord(string nameValue)
+        //{
+        //    _driver.FindElement(By.LinkText(nameValue));
+        //}
+
         public void PerformClickOnSpecialValue(string name, string operation)
         {
-            tblList.PerformActionOnCell("3", "Name", name, operation);
+            tblList.PerformActionOnCell("3", "afpName", name, operation);
         }
 
         public string GetAfpName() => afpName.Text;

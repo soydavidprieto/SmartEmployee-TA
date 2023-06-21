@@ -110,14 +110,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table1.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "soydavidprieto@gmail.com",
                             "123456"});
 #line 7
- testRunner.Given("I Login with the following details", ((string)(null)), table1, "Given ");
+ testRunner.Given("I Login with the following details", ((string)(null)), table3, "Given ");
 #line hidden
 #line 10
   testRunner.And("I click on \"lnkSocialSecurity\" link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -125,14 +125,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 11
   testRunner.When("I click on apf \"lnkAfp\" link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                             "afpName",
                             "afpNit"});
-                table2.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "dos",
                             "unoiy876"});
 #line 12
-  testRunner.Then("I create the Afp with the following details", ((string)(null)), table2, "Then ");
+  testRunner.Then("I create the Afp with the following details", ((string)(null)), table4, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

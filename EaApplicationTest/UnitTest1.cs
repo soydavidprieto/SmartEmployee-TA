@@ -28,7 +28,8 @@ namespace EaApplicationTest
             _afpPage.ClickAfp();
             _afpPage.ClickCreate();
             _afpPage.CreateAfp(afp);
-            //_afpPage.PerformClickOnSpecialValue(afp.afpName, "EditAfp");
+            //(_afpPage.PerformClickOnSpecialValue("Colmedica", "Edit");
+            
         }
     }
 }
